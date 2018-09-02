@@ -1,2 +1,3 @@
 # qrcpu-weapp
-Î¢ĞÅĞ¡³ÌĞò qrcpu-weapp ÏîÄ¿ËùÇëÇóµÄ½Ó¿ÚÓÉÏîÄ¿  qrcpu-php-demo Ìá¹©
+å¾®ä¿¡å°ç¨‹åº qrcpu-weapp é¡¹ç›®æ‰€è¯·æ±‚çš„æ¥å£ç”±é¡¹ç›® https://github.com/qrcpu/qrcpu-php-demo æä¾›
+äº†è§£æ›´å¤šï¼šhttp://www.qrcpu.com/
