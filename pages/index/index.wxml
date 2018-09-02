@@ -1,0 +1,51 @@
+
+<view class="panel">
+    <button class="use-template-san" bindtap="tapScan">[--] 扫一扫解码</button>
+    <view class="template_title">二维码内容</view>
+</view>
+
+<form bindsubmit="bindFormSubmit">
+    <view class="panel">
+      <textarea  show-confirm-bar="false" auto-height='true'  placeholder="在此输入 二维码内容"  name="qrdata" maxlength="150" value="{{qrdata}}"/>
+    </view>
+
+    <view class="panel">
+        <picker bindchange="bindPickerColor" value="{{color_index}}" range="{{color_array}}">
+            <view class="picker">
+            颜色选择：{{color_array[color_index]}}
+            </view>
+      </picker>
+    </view>
+
+    <view class="panel">
+        <picker bindchange="bindPickerXt" value="{{xt_index}}" range="{{xt_array}}" >
+            <view class="picker">
+            形态选择：{{xt_array[xt_index]}}
+            </view>
+      </picker>
+    </view>
+
+    <view class="panel">
+     <view>生成尺寸：{{qrsize}} px</view>
+     <slider bindchange="sliderSize" min="100" max="1000" value="300" show-value/>
+    </view>
+
+    <view class="panel center">
+     
+     <button class="use-template" form-type="submit" >生成二维码</button>
+    </view>
+
+    <view class="cover" wx:if="{{is_show_qrcode}}">
+      <image src="{{template_qrcode}}" mode="aspectFit"  bindtap="tapPreview" ></image>
+       <view class="template_title center">点击图片查看/保存</view>
+    </view>
+
+     
+
+
+     <view class="help">
+         <rich-text nodes="使用说明：<br/>1.输入内容生成二维码<br/>2.扫码或在相册选择二维码解码，生成二维码<br/>3.可以先选择模板快速美化二维码" bindtap="tap"></rich-text>
+     </view>
+
+
+ </form>

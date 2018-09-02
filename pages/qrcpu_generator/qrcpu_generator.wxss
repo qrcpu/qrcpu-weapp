@@ -1,0 +1,57 @@
+page{
+  padding-bottom: 45px;
+}
+.center{text-align: center}
+.cover{
+  text-align: center;
+  width: 100%;
+  max-height:50%;
+}
+.help{
+  color:#999;
+  font-size: 12px;
+  padding:10px 15px;
+}
+
+.panel{
+  background: #fff; 
+  padding:15px 10px;
+  font-size: 12px;
+  border-top: 1px solid rgb(223, 220, 220);
+}
+
+
+.panel textarea{
+  width: 100%;
+  min-height: 50px;
+}
+
+.template_title{
+   font-size: 15px;
+}
+.title{
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight:bold;
+}
+
+.use-template{
+  background:#3399CC;
+  color: #fff;
+  border-radius: 5px; 
+  padding:0px;
+  width:150px;
+  height:35px; 
+  line-height: 35px;
+  margin-right:10px;
+  display: inline-block;
+}
+.use-template-san{
+  float: right;
+  background:rgb(10, 138, 16);
+  color: #fff;
+  border-radius: 0; 
+  padding:0px 8px;
+  font-size: 12px;
+  display: inline-block;
+}

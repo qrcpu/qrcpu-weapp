@@ -1,0 +1,19 @@
+
+<view class="panel">
+    <view class="template_title">咨询反馈</view>
+</view>
+
+<view class="panel">
+   <button open-type="contact" session-from="pre-sale" class="use-template" >在线咨询 9:00 ~ 18:00</button>
+</view>
+<view class="panel">
+    <button class="use-template"  bindtap="tapKeFuTel" >电话咨询 {{kefuTel}}</button>
+</view>
+<view class="panel">
+    <button class="use-template"  bindtap="tapCopyTel" >复制电话号码</button>
+</view>
+
+<view class="panel">
+    <rich-text nodes="如果遇到使用问题欢迎向我反馈" bindtap="tap"></rich-text>
+</view>
+

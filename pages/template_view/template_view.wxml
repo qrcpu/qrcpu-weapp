@@ -1,0 +1,24 @@
+<!--pages/template_view.wxml-->
+<view class="cover">
+  <image src="{{template_qrcode.thumb}}" mode="aspectFit"  bindtap="tapPreview" ></image>
+ </view>
+<view class="panel">
+    <view class="template_title">{{title}}</view>
+</view>
+
+<view class="panel">
+    <view class="title">简介</view>
+    <rich-text nodes="{{content}}" bindtap="tap"></rich-text>
+</view>
+
+<view class="panel" wx:if="{{copyright}}">
+    <view class="title">声明</view>
+    <rich-text nodes="{{copyright}}<br/>1.部分素材来源于网络,经过本人创意设计后可帮助您快速美化自己的二维码，请勿用于商业用途，若用于商业用途请自行判断是否支持并承担责任<br/>2.若模板存在侵权行为请联系我们下架，谢谢您的使用与反馈" bindtap="tap"></rich-text>
+</view>
+
+
+<view class="footer" wx:if="{{template_id > 0}}">
+    <button class="use-template"  bindtap="tapUse" >免费使用</button>
+  <view class="use-totals">已使用 <text>{{totals}}</text> 次</view>
+
+</view>

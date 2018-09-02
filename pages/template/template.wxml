@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <!--左-->
+  <view class="nav_left">
+    <block wx:for="{{catList}}" wx:key="id">
+      <view class="nav_left_items {{curCatId == item.cat_id ? 'active' : ''}}" bindtap="tapSwitchCat" data-cat_id="{{item.cat_id}}">{{item.cat_name}}</view>
+    </block>
+  </view>
+  <!--右-->
+  <view class="nav_right">
+
+     <block wx:for="{{dataList}}" wx:key="id">
+        <view class="nav_right_items">
+          <navigator url="/pages/template_view/template_view?template_id={{item.template_id}}">
+               <image src="{{item.template_qrcode.thumb}}" mode="aspectFit"></image>
+             <text>{{item.title}}</text>
+          </navigator>
+        </view>
+       </block>
+
+  </view>
+</view>
